@@ -1,4 +1,4 @@
-class TemplatingController < AbstractController::Base
+class MonsterTemplatingController < AbstractController::Base
   include AbstractController::Logger
   include AbstractController::Rendering
   include AbstractController::Layouts
