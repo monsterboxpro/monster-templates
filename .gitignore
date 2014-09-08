@@ -1,0 +1,10 @@
+Manifest
+pkg
+doc
+*.gem
+tmp/**/*
+Gemfile.lock
+.bundle
+.
+.DS_Store
+/**/*/.DS_Store
