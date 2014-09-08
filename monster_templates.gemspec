@@ -7,12 +7,12 @@ require "monster_templates/version"
 Gem::Specification.new do |s|
   s.name        = "monster-templates"
   s.version     = MonsterTemplates::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MonsterTemplates."
-  s.description = "TODO: Description of MonsterTemplates."
-  s.license     = "MIT"
+  s.authors     = ['Monsterbox Productions']
+  s.email       = ['andrew@monsterboxpro.com']
+  s.homepage    = 'http://monsterboxpro.com'
+  s.summary     = 'angular js templates'
+  s.description = 'angular js templates'
+  s.license     = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
