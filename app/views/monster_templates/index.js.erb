@@ -1,5 +1,5 @@
 angular.module("app").run(["$templateCache", function($templateCache) {
-  <% TemplatingController.render_templates.each do |k,v| %>
+  <% MonsterTemplatingController.render_templates.each do |k,v| %>
     $templateCache.put(<%= raw k.to_json %>, <%= raw v.to_json %>)
   <% end %>
 }]);
