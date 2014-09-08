@@ -1,7 +1,7 @@
 class MonsterTemplatingController < AbstractController::Base
   include AbstractController::Logger
   include AbstractController::Rendering
-  include AbstractController::Layouts
+  include ActionView::Layouts
   include AbstractController::Helpers
   include AbstractController::Translation
   include AbstractController::AssetPaths
