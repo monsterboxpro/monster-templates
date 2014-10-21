@@ -1,7 +1,11 @@
 class MonsterTemplatingController < AbstractController::Base
   include AbstractController::Logger
   include AbstractController::Rendering
-  include AbstractController::Layouts
+  if defined?(AbstractController::Layouts)
+    include AbstractController::Layouts
+  else
+    include ActionView::Layouts
+  end
   include AbstractController::Helpers
   include AbstractController::Translation
   include AbstractController::AssetPaths
