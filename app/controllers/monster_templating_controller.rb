@@ -23,6 +23,10 @@ class MonsterTemplatingController < AbstractController::Base
       end
     end
 
+    def self.files
+      Dir[Rails.root.join('app','templates','*','**','**')]
+    end
+
     def self.render_templates
       controller = MonsterTemplatingController.new
       result = {}

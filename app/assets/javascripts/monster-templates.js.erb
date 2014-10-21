@@ -1,0 +1,10 @@
+angular.module("app").run(["$templateCache", function($templateCache) {
+  <% MonsterTemplatingController.render_templates.each do |k,v| %>
+    $templateCache.put(<%= k.to_json %>, <%= v.to_json %>)
+  <% end %>
+}]);
+<%
+MonsterTemplatingController.files.each do |file|
+  depend_on(file)
+end
+%>
