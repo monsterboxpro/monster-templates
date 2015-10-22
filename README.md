@@ -10,7 +10,7 @@ It removes the need for AJAX calls to retrieve the templates (or for you to manu
 In Gemfile
 
 ```ruby
-gem 'monster-templates'
+gem 'monster-templates', github: 'monsterboxpro/monster-templates'
 ```
 
 ### 2. Update your application.coffee
