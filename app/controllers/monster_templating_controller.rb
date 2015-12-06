@@ -34,7 +34,7 @@ class MonsterTemplatingController < AbstractController::Base
       files = Dir[Rails.root.join('app','templates','*','**','**')]
       files.reject!{|f| File.basename(f)[0] == '_'}
       files.each do |file|
-        if m = file.match(/#{prefix}\/(.+).haml/)
+        if m = file.match(/#{prefix}\/(.+).(haml|slim)/)
           template_name = m[1]
           puts template_name.inspect
           result[template_name] = controller.r(template_name)
